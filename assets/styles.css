@@ -1,0 +1,439 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+} 
+
+body {
+    background-color: #020403;
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+}
+
+body.dark {
+    background-color: #FFFFFF;
+    color: #020403;
+    filter: invert(100%);
+
+}
+
+body.dark .image {
+    filter: invert(100%);
+
+}
+
+.header {
+    display: flex;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1900px;
+    margin: auto;
+   
+    /* position: relative; */
+} 
+
+.logo {
+    color:white
+}
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-12 {
+    width: 100%; 
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.col-11 {
+    width: calc(100% /12 * 11); 
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.col-10 {
+    width: calc(100% /12 * 10);
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.col-9 {
+    width: calc(100% /12 * 9); 
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.col-8 {
+    width: calc(100% /12 * 8);
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.col-7 {
+    width: calc(100% /12 * 7);
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.col-6 {
+    width: calc(100% /12 * 6); 
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.col-5 {
+    width: calc(100% /12 * 5); 
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.col-4 {
+    width: calc(100% /12 * 4); 
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.col-3 {
+    width: calc(100% /12 * 3);
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.col-2 {
+    width: calc(100% /12 * 2);
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.col-1 {
+    width: calc(100% /12);
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+/* BARRA DE NAVEGACION */
+.switch {
+    background-color:  white;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    
+}
+
+.dark-mode {
+    width: 30px;
+        height:30px;
+        line-height:30px;
+        background:none;
+        color: black;
+}
+
+.switch::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: #353535;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px rgb(255, 255, 255);
+}
+
+.switch.active {
+    background-color: orange;
+    color: black;
+    
+}
+
+.switch.active::after {
+    right: 0;
+    left: unset;
+}
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-left{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+
+.button-menu{
+    background-color: transparent;
+    border: none;
+}
+
+nav a, .icon-menu {
+    color: #FFFFFF;
+    padding: 5px 10px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+.icon-menu {
+    color: white;
+}
+.text-right {
+    text-align: right;
+}
+nav {
+    max-height: 100vh;
+    transition: max-height 1s;
+    text-align: center;
+    position: relative;
+    z-index: inherit;
+    padding-top: 1em;
+}
+.hidden {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.nav-link:hover, 
+.nav-link_active
+    {
+        background-color: white;
+        border-radius: 1em ;
+        color: black;
+        transition: 0.5s;
+    }
+
+/* FOTO Y FIRST VECTOR */
+.header {
+    flex-direction: column;
+}
+.vector1{
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+
+.image-person{
+    display: block;
+    justify-content: center;
+    position: relative;
+    width: 40%;
+    top: 0;
+    left: 33.33%;
+    border-radius: 50%;
+
+
+}
+
+
+
+/* TITULO E ICONOS */
+
+h2{
+    font-size: 30px;  
+    padding-top: 2rem;
+    text-align: center;
+    color: #ADADAD;
+}
+
+h1{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding-top: 0.5rem;
+    
+}
+
+
+
+/* iconos */
+
+.icons{
+    padding: 1rem;
+    text-align: center;
+    
+    
+    
+    
+}
+.icons img{
+    margin-left: 2rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;  
+}
+
+
+
+
+.card img:hover {
+    transition: all 0.5s ease;
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.portfolio-img-container img:hover {
+    transition: all 0.5s ease;
+    transform: scale(0.9);
+    cursor: pointer;   
+}
+
+
+/* VECTOR2 */
+
+.posvector{
+    position:absolute;
+    top: 26rem;
+    z-index: -1;
+
+}
+.vector2{
+    width: 100%;
+    height: auto;
+    position: static;
+    /* top: 23rem; */
+}
+
+
+
+/* ACERCA DE MI */
+h3{
+    font-size: 25px;
+    color: #FFFFFF;
+   text-align: center;
+    padding-top: 25%;
+    
+}
+
+p{
+    font-size: 16px;
+    padding: 1rem;
+    text-align: center;
+    color: #FFFFFF;
+    
+}
+.border-text{
+    border-left: 3px solid white;
+    
+}
+
+
+
+/* Habilidades */
+.icon-habilidades{
+    border: solid 3px #353535;
+    background-color: #353535;
+    border-radius: 100px;
+    width: 9rem;
+    padding: 0.5rem;
+}
+.icon-contacto{
+    border: solid 1px white;
+    border-radius: 100px;
+    width: 5rem;
+    padding: 01rem;
+}
+.card {
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    height: 100%;
+}
+
+body.dark .icon-habilidades {
+    filter: invert(100%);
+
+}
+
+
+
+/* mis experiencias */
+.border{
+    border-bottom: 0.5px solid grey;
+    width: 50%;
+    padding: none;
+}
+
+h6{
+    font-size: 1rem;
+    color: white;
+}
+
+.img-portafolio{
+    
+    width: 300px;   
+} 
+
+.portfolio-container {
+    padding: 0 10%;
+}
+
+.portfolio-img {
+    max-width: 100%;
+}
+
+.portfolio-img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.img-center{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h5{
+    text-align: center;
+   
+}
+
+.whatsapp img {
+   display: none;
+}
+
+
+.whatsapp img {
+    display: block;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    z-index: 1;
+    width: 50px;
+}
+
+body.dark .whatsapp img {
+    filter: invert(100%);
+}
+
+
+.foot{
+    border-top: solid 2px white;
+}
+

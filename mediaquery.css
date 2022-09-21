@@ -1,0 +1,466 @@
+/* // Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 400) and (min-width: 576px) { 
+    .col-sm-12 {
+        width: 100%; 
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+    
+    .col-sm-11 {
+        width: calc(100% /12 * 11); 
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+    
+    .col-sm-10 {
+        width: calc(100% /12 * 10);
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+    
+    .col-sm-9 {
+        width: calc(100% /12 * 9); 
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+    
+    .col-sm-8 {
+        width: calc(100% /12 * 8);
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+    
+    .col-sm-7 {
+        width: calc(100% /12 * 7);
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+    
+    .col-sm-6 {
+        width: calc(100% /12 * 6); 
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+    
+    .col-sm-5 {
+        width: calc(100% /12 * 5); 
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+    
+    .col-sm-4 {
+        width: calc(100% /12 * 4); 
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+    
+    .col-sm-3 {
+        width: calc(100% /12 * 3);
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+    
+    .col-sm-2 {
+        width: calc(100% /12 * 2);
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+    
+    .col-sm-1 {
+        width: calc(100% /12);
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+
+    h2{
+        font-size: 40px;  
+        padding-top: 2rem;
+        text-align: center;
+        color: #ADADAD;
+    }
+    
+    h1{
+        font-size: 50px;
+        color: white;
+        text-align: center;
+        padding-top: 0.5rem;
+        
+    }
+    
+    
+    h3{
+        font-size: 25px;
+        color: #FFFFFF;
+        text-align: center;
+        padding-top: 20%;
+    }
+    
+    .posvector{
+        position:absolute;
+        top: 20rem;
+        
+    }
+    .vector2{
+        width: 100%;
+        height: auto;
+        position: static;
+        /* bottom: 30%; */
+        top: 26rem;
+        z-index: -1;
+    }
+    .icons img{
+        cursor: pointer;
+        z-index: 1;  
+    }
+
+    .whatsapp img {
+        display: block;
+        position: fixed;
+        right: 5px;
+        bottom: 5px;
+        z-index: 1;
+        width: 50px;
+    }
+
+   
+
+
+    
+
+    
+   
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+     /*BARRA DE NAVEGACION  */
+    .lg-hidden {
+        display: none;
+    }
+    #main-menu {
+        max-height: none;
+    }
+    nav {
+        background-color: transparent;
+        display: flex;
+        justify-content: flex-end;
+        z-index: 999;
+    }
+    nav a {
+        color: white;
+    }
+    nav li {
+        display: inline-block;
+    }
+
+    
+    /* FOTO Y FIRST VECTOR */
+
+    .vector1{
+        padding: 4rem;
+        width: 100%;
+        height: auto;
+        position: absolute;
+    }
+    
+    .image-person{
+        display: block;
+        justify-content: center;
+        position: relative;
+        width: 30%;
+        top: 5rem;
+        left: 36%;
+    
+    
+    }
+
+    h2{
+        font-size: 45px;  
+        padding-top: 6rem;
+        text-align: center;
+        color: #ADADAD;
+    }
+    
+    h1{
+        font-size: 55px;
+        color: white;
+        text-align: center;
+        padding-top: 0.5rem;
+    }
+
+    .posvector{
+        position:static;
+        /* top: 20%; */
+    }
+    .vector2{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        /* bottom: 30%; */
+        top: 22rem;
+        z-index: -1;
+    }
+
+    .icons img{
+        cursor: pointer;
+        z-index: 1;  
+    }
+
+  
+        
+    h3{
+        font-size: 25px;
+        color: #FFFFFF;
+        text-align: center;
+        padding-top: 20%;
+    }
+    p{
+        font-size: 20px;
+        padding: 1rem;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .whatsapp img {
+        display: none;
+      
+    }
+
+   
+    
+    
+   
+    
+}
+
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    .col-lg-4 {
+        width: 33.33%;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+    /* FOTO Y FIRST VECTOR */
+
+    .vector1{
+        padding: 4rem;
+        width: 100%;
+        height: auto;
+        position: absolute;
+    }
+    
+    .image-person{
+        display: block;
+        justify-content: center;
+        position: relative;
+        width: 25%;
+        top: 5rem;
+        left: 40%;
+    }
+    .icon img{
+        width: 100px;
+        height: auto;
+    }
+    h2{
+        font-size: 45px;  
+        padding-top: 6rem;
+        text-align: center;
+        color: #ADADAD;
+    }
+    
+    h1{
+        font-size: 55px;
+        color: white;
+        text-align: center;
+        padding-top: 0.5rem;
+    }
+    .posvector{
+        position:static;
+        /* top: 20%; */
+    }
+    .vector2{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        /* bottom: 30%; */
+        top: 22rem;
+        z-index: -1;
+    }
+    .icons img{
+        cursor: pointer;
+        z-index: 1;  
+    }
+
+   
+    h3{
+        font-size: 30px;
+        color: #FFFFFF;
+        text-align: center;
+        padding-top: 25%;
+    }
+    p{
+        font-size: 25px;
+        padding: 1rem;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .img-portafolio{
+        padding: 1rem;
+        width: 400px;   
+    }
+
+   
+    
+    
+  }
+
+/*  Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .vector1{
+        padding: 4rem;
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .image-person{
+        display: block;
+        justify-content: center;
+        position: absolute;
+        width: 25%;
+        top: 6.5rem;
+        left: 38%;
+    
+    
+    }
+    
+    h2{
+        font-size: 45px;  
+        padding-top: 0.5rem;
+        text-align: center;
+        color: #ADADAD;
+    }
+    
+    h1{
+        font-size: 55px;
+        color: white;
+        text-align: center;
+        padding-top: 0.5rem;
+    }
+    .posvector{
+        position:static;
+        /* top: 20%; */
+    }
+    .vector2{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        /* bottom: 30%; */
+        top: 26rem;
+        z-index: -1;
+    }
+
+    .icons img{
+        cursor: pointer;
+        z-index: 1;  
+    }
+    h6{
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    .img-portafolio{
+        padding: 1rem;
+        width: 450px;
+        height: 450;   
+    }
+  }
+
+  @media (min-width: 1389px)  {
+    .vector1{
+        padding: 4rem;
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .image-person{
+        display: block;
+        justify-content: center;
+        position: absolute;
+        width: 25%;
+        top: 6.5rem;
+        left: 40%;
+    
+    
+    }
+    h2{
+        font-size: 50px;  
+        padding-top: 0.5rem;
+        text-align: center;
+        color: #ADADAD;
+    }
+    
+    h1{
+        font-size: 80px;
+        color: white;
+        text-align: center;
+        padding-top: 0.5rem;
+    }
+
+    /* .vector2{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: none;
+    } */
+    h3{
+        font-size: 40px;
+        color: #FFFFFF;
+        text-align: center;
+        padding-top: 35%;
+    }
+    p{
+        font-size: 35px;
+        padding: 1rem;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .posvector{
+        position:static;
+        /* top: 20%; */
+    }
+    .vector2{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        /* bottom: 30%; */
+        top: 28rem;
+        z-index: -1;
+    }
+
+    .icons img{
+        cursor: pointer;
+        z-index: 1;  
+    }
+
+   
+    h6{
+        font-size: 2rem;
+        color: white;
+    }
+
+    .img-portafolio{
+        padding: 1rem;
+        width: 450px;
+        
+        
+    }
+
+    
+    }
+    
+  
